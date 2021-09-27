@@ -87,6 +87,10 @@ ul {
 
 .header {
   display: flex;
+}
+
+.header-portfolio {
+  display: flex;
   border: 1px solid #ececec;
 }
 
