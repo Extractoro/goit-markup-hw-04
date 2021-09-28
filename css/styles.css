@@ -149,17 +149,6 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.header-contact-item::before {
-  content: '';
-  background-image: url(../images/envelope.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-}
-
 .header-email-link:hover {
   color: var(--accent-color);
 }
