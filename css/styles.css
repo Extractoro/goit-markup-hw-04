@@ -364,6 +364,7 @@ ul {
 .team-social-item {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .team-social-link {
@@ -374,7 +375,6 @@ ul {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
-  margin-bottom: 30px;
   fill: var(--clients-color);
 }
 
@@ -435,6 +435,10 @@ ul {
   flex-basis: calc(100% / 6 - 30px);
 }
 
+.clients-item:last-child {
+  margin-right: 0;
+}
+
 .clients-item-link {
   width: 170px;
   height: 92px;
@@ -449,10 +453,6 @@ ul {
 .clients-item-link:hover {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-}
-
-.clients-svg {
-  width: 170px;
 }
 
 /* Footer */
