@@ -114,7 +114,7 @@ ul {
 }
 
 .header-item {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .header-item:last-child {
@@ -143,23 +143,33 @@ ul {
 }
 
 .header-email-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 
-.header-email-link:hover {
+.header-svg {
+  margin-right: 10px;
+}
+
+.header-email-link:hover, 
+.header-tel-link:hover {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
 .header-tel-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 
 .header-tel-link:hover {
@@ -169,7 +179,7 @@ ul {
 /* First Section */
 
 .first-section {
-  background-color: #2f303a;
+  background-image: url(../images/headerbg.jpg);
   padding-bottom: 200px;
   padding-top: 200px;
 }
@@ -219,6 +229,50 @@ ul {
 .benefits-list {
   display: flex;
   justify-content: space-between;
+}
+
+.icon1::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.icon2::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.icon3::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.icon4::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
 
 .benefits-list-title {
@@ -299,6 +353,30 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+}
+
+.team-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-social-item {
+  margin-right: 10px;
+}
+
+.team-social-item.nth-child {
+  margin: 0 32px;
+}
+
+.team-social-link {
+  fill: #AFB1B8;
+}
+
+.team-svg {
+  outline: 1px solid red;
+  width: 44px;
+  height: 44px;
+  fill: #AFB1B8;
 }
 
 .team-list-item-title {
