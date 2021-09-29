@@ -339,7 +339,8 @@ ul {
   margin-bottom: 50px;
 }
 
-.team-list {
+.team-list,
+.footer-invite-list {
   display: flex;
 }
 
@@ -377,12 +378,14 @@ ul {
   fill: var(--clients-color);
 }
 
-.team-svg {
+.team-svg,
+.footer-svg {
   width: 20px;
   height: 20px;
 }
 
-.team-social-link:hover {
+.team-social-link:hover,
+.footer-invite-link:hover {
   background-color: var(--accent-color);
   fill: var(--primary-title-color);
 }
@@ -440,20 +443,16 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--clients-color);
 }
 
 .clients-item-link:hover {
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .clients-svg {
   width: 170px;
-  fill: var(--clients-color);
-}
-
-.clients-svg:hover {
-  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -462,6 +461,11 @@ ul {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -498,6 +502,42 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
   opacity: 0.6;
+}
+
+.footer-invite {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  margin-bottom: 20px;
+}
+
+.footer-invite-item {
+  margin-right: 10px;
+}
+
+.footer-invite-item:last-child {
+  margin-right: 0;
+}
+
+.footer-invite-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: var(--clients-color);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Portfolio */
@@ -565,6 +605,11 @@ ul {
   margin-bottom: 30px;
   width: 370px;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.product-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product-block {
