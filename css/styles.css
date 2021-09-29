@@ -156,7 +156,7 @@ ul {
   margin-right: 10px;
 }
 
-.header-email-link:hover, 
+.header-email-link:hover,
 .header-tel-link:hover {
   fill: var(--accent-color);
   color: var(--accent-color);
@@ -235,7 +235,7 @@ ul {
   content: '';
   display: block;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url(../images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -246,7 +246,7 @@ ul {
   content: '';
   display: block;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -257,7 +257,7 @@ ul {
   content: '';
   display: block;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -268,7 +268,7 @@ ul {
   content: '';
   display: block;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -357,26 +357,34 @@ ul {
 
 .team-social {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .team-social-item {
-  margin-right: 10px;
-}
-
-.team-social-item.nth-child {
-  margin: 0 32px;
+  display: flex;
+  justify-content: center;
 }
 
 .team-social-link {
-  fill: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 30px;
+  fill: var(--clients-color);
 }
 
 .team-svg {
-  outline: 1px solid red;
-  width: 44px;
-  height: 44px;
-  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-title-color);
 }
 
 .team-list-item-title {
@@ -397,7 +405,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 /* Clients */
