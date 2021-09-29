@@ -179,7 +179,8 @@ ul {
 /* First Section */
 
 .first-section {
-  background-image: url(../images/headerbg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/headerbg.jpg);
   padding-bottom: 200px;
   padding-top: 200px;
 }
